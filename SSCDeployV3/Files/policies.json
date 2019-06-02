@@ -1,0 +1,11 @@
+{
+	"policies":{
+		"DisplayMenuBar": true,
+		"DisplayBookmarksToolbar": true,
+		"NoDefaultBookmarks": true,
+		"Certificates": {
+            "ImportEnterpriseRoots": true,
+            "Install": ["C:\\Program Files (x86)\\Mozilla Firefox\\certificats\\EPFL SLS ROOT CA.crt","C:\\Program Files (x86)\\Mozilla Firefox\\certificats\\EPFL SLS SSL CA.crt"]
+		}
+	}
+}
