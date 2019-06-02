@@ -230,7 +230,7 @@
                     <RichTextBox BorderThickness="0" FontSize="22" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" IsReadOnly="True" Background="Transparent" Width="400"  Margin="0,50,0,0">
                         <FlowDocument>
                             <Paragraph x:Name="version_paragraph" TextAlignment="Center"></Paragraph>
-                            <Paragraph TextAlignment="Center">Créé par David Carvalho à l'attention des Service Centraux de l'EPFL</Paragraph>
+                            <Paragraph TextAlignment="Center">Créé par David Carvalho à l'attention des Services Centraux de l'EPFL</Paragraph>
                             <Paragraph TextAlignment="Center" Margin="0">© Tout droits résérvés</Paragraph>
                             <Paragraph TextAlignment="Center" Margin="0">EPFL / VPSI / SSC - 2019</Paragraph>
                         </FlowDocument>
