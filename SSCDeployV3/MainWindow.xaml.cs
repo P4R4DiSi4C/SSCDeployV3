@@ -107,26 +107,26 @@ namespace SSCDeployV3
                 NICPowerSave.Disable();
             }
 
-            if (check_onedrive.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
+            if (check_onedrive.Dispatcher.Invoke(() => check_onedrive.IsChecked == true))
             {
                 progress?.Report("Désinstallation de Onedrive...");
                 Onedrive.Uninstall();
             }
 
-            if (check_region.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
+            if (check_region.Dispatcher.Invoke(() => check_region.IsChecked == true))
             {
                 progress?.Report("Application options régionales...");
                 Regional.Set_Thousands_Separator();
                 Regional.Set_Decimal_Separator();
             }
 
-            if (check_edge_desk.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
+            if (check_edge_desk.Dispatcher.Invoke(() => check_edge_desk.IsChecked == true))
             {
                 progress?.Report("Supression îcone Edge du bureau...");
                 Desktop.Delete_Edge_Icon();
             }
 
-            if (check_adobe.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
+            if (check_adobe.Dispatcher.Invoke(() => check_adobe.IsChecked == true))
             {
                 progress?.Report("Adobe par défaut S.V.P...");
                 FileProps.OpenPDFDetails();
