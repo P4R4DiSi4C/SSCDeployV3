@@ -62,86 +62,74 @@ namespace SSCDeployV3
             if(check_firefox.Dispatcher.Invoke(() => check_firefox.IsChecked == true))
             {
                 progress?.Report("Mise en place de la config Firefox...");
-                Thread.Sleep(2000);
-                //Firefox.Profilize();
+                Firefox.Profilize();
             }
 
             if (check_select_usb.Dispatcher.Invoke(() => check_select_usb.IsChecked == true))
             {
                 progress?.Report("Désactivation suspension sélective USB...");
-                Thread.Sleep(2000);
-                //SelectiveUSB.Disable();
+                SelectiveUSB.Disable();
             }
 
             if(check_sleep.Dispatcher.Invoke(() => check_sleep.IsChecked == true))
             {
                 progress?.Report("Désactivation mise en veille sous secteur...");
-                Thread.Sleep(2000);
-                //Sleep.Disable();
+                Sleep.Disable();
             }
 
             if (check_ipv6.Dispatcher.Invoke(() => check_ipv6.IsChecked == true))
             {
                 progress?.Report("Désactivation de l'IPV6...");
-                Thread.Sleep(2000);
-                //IPV6.Disable();
+                IPV6.Disable();
             }
 
             if (check_unpin.Dispatcher.Invoke(() => check_unpin.IsChecked == true))
             {
                 progress?.Report("Désépinglage des applications Microsoft...");
-                Thread.Sleep(2000);
-                //Docking.Unpin();
+                Docking.Unpin();
             }
 
             if (check_pin.Dispatcher.Invoke(() => check_pin.IsChecked == true))
             {
                 progress?.Report("Épinglage des applications par défaut...");
-                Thread.Sleep(2000);
-                //Docking.Pin();
+                Docking.Pin();
             }
 
             if (check_nic_sleep.Dispatcher.Invoke(() => check_nic_sleep.IsChecked == true))
             {
                 progress?.Report("Désactivation mise en veille cartes réseau...");
-                Thread.Sleep(2000);
-                //Sleep.Disable();
+                Sleep.Disable();
             }
 
             if (check_usb_sleep.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
             {
                 progress?.Report("Désactivation mise en veille USB...");
-                Thread.Sleep(2000);
-                //NICPowerSave.Disable();
+                NICPowerSave.Disable();
             }
 
             if (check_onedrive.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
             {
                 progress?.Report("Désinstallation de Onedrive...");
-                Thread.Sleep(2000);
-                //Onedrive.Uninstall();
+                Onedrive.Uninstall();
             }
 
             if (check_region.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
             {
                 progress?.Report("Application options régionales...");
-                Thread.Sleep(2000);
-                //Regional.Set_Thousands_Separator();
-                //Regional.Set_Decimal_Separator();
+                Regional.Set_Thousands_Separator();
+                Regional.Set_Decimal_Separator();
             }
 
             if (check_edge_desk.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
             {
                 progress?.Report("Supression îcone Edge du bureau...");
-                Thread.Sleep(2000);
-                //Desktop.Delete_Edge_Icon();
+                Desktop.Delete_Edge_Icon();
             }
 
             if (check_adobe.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
             {
                 progress?.Report("Adobe par défaut S.V.P...");
-                Thread.Sleep(2000);
-                //FileProps.OpenPDFDetails();
+                FileProps.OpenPDFDetails();
             }
 
         }
