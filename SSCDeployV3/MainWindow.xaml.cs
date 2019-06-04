@@ -98,13 +98,13 @@ namespace SSCDeployV3
             if (check_nic_sleep.Dispatcher.Invoke(() => check_nic_sleep.IsChecked == true))
             {
                 progress?.Report("Désactivation mise en veille cartes réseau...");
-                Sleep.Disable();
+                NICPowerSave.Disable();
             }
 
             if (check_usb_sleep.Dispatcher.Invoke(() => check_usb_sleep.IsChecked == true))
             {
                 progress?.Report("Désactivation mise en veille USB...");
-                NICPowerSave.Disable();
+                USBPowerSave.Disable();
             }
 
             if (check_onedrive.Dispatcher.Invoke(() => check_onedrive.IsChecked == true))
