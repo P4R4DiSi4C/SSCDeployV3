@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Classe Docking
+ * Gère tout l'épinglage/désépinglage des applications sur la barre des tâches
+ * TODO: Gérer l'architecture x64
+ */
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -10,21 +15,25 @@ namespace SSCDeploy.Actions
 {
     public static class Docking
     {
+        // Définit le dossier des applications épinglées de l'utilisateur
         private static string[] user_pinned = { Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Microsoft", "Internet Explorer", "Quick Launch", "User Pinned","Taskbar" };
         private static DirectoryInfo dir_user_pinned = new DirectoryInfo(Path.Combine(user_pinned));
 
+        // Classe contenant le dossier de l'application à épingler et le chemin pour désépingler le raccourci
         class PinnedDir
         {
             public string DirToPin { get; set; }
             public string DirToUnpin { get; set; }
         }
 
+        // Application Windows à désépingler
         static List<string> WinAppsToUnpin = new List<string>
         {
             "Microsoft Edge",
             "Microsoft Store"
         };
 
+        // Application à épingler
         static Dictionary<string, PinnedDir> AppsToPin = new Dictionary<string, PinnedDir>()
         {
             {
@@ -78,10 +87,14 @@ namespace SSCDeploy.Actions
             }
         };
 
+        /// <summary>
+        /// Épinglage des applications
+        /// </summary>
         public static void Pin()
         {
             try
             {
+                // Épingle les applications à l'aide de la cmd et de l'outil "syspin"
                 Process p = new Process();
                 ProcessStartInfo cmd = new ProcessStartInfo();
                 cmd.FileName = "cmd.exe";
@@ -117,10 +130,14 @@ namespace SSCDeploy.Actions
             }
         }
 
+        /// <summary>
+        /// Désépinglage des applications
+        /// </summary>
         public static void Unpin()
         {
             try
             {
+                // Désépingle les applications Microsoft à l'aide de Powershell
                 using (PowerShell powershell_Inst = PowerShell.Create())
                 {
                     foreach (string appName in WinAppsToUnpin)

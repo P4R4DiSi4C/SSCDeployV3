@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿/* Classe SelectiveUSB
+ * Permet l'activation ou désactivation de la mise en veille séléctive USB
+ */
+using System.Windows;
 
 namespace SSCDeploy.Actions
 {

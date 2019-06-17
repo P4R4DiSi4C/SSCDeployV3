@@ -1,4 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿/* Classe USBPowerSave
+ * Permet de désactiver la mise en veille des ports USB
+ */ 
+using System.Collections.ObjectModel;
 using System.Management.Automation;
 using System.Windows;
 
@@ -24,7 +27,7 @@ namespace SSCDeploy.Actions
             }
             catch (System.Exception ex)
             {
-                MessageBox.Show("La désactivation de la mise en veille des prises USB s'est mal déroulée: " + ex.Message);
+                MessageBox.Show("La désactivation de la mise en veille des ports USB s'est mal déroulée: " + ex.Message);
             }
         }
     }

@@ -12,6 +12,7 @@ foreach ($p in $powerMgmt)
 {
 	$IN = $p.InstanceName.ToUpper()
 	
+	# Chaque HUB USB
     foreach ($h in $hubs)
 	{
 		$PNPDI = $h.PNPDeviceID
@@ -21,7 +22,8 @@ foreach ($p in $powerMgmt)
             $p.psbase.put()
         }
 	}
-
+	
+	# Chaque Controlleur USB
     foreach ($h in $controllers)
 	{
 		$PNPDI = $h.PNPDeviceID

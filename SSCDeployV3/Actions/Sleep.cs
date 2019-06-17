@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿/* Classe Sleep
+ * Permet l'activation ou désactivation de la mise en veille sous secteur
+ */
+using System.Windows;
 
 namespace SSCDeploy.Actions
 {

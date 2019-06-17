@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Classe FileProps
+ * Permet l'ouverture des propriétés d'un fichier
+ * - Ouvre dummy.pdf pour définir Adobe Acrobat par défaut 
+ */
+using System;
 using System.Runtime.InteropServices;
 using System.Windows;
 
@@ -37,6 +41,9 @@ namespace SSCDeploy.Actions
             public IntPtr hProcess;
         }
 
+        /// <summary>
+        /// Ouvre les propriétés du fichier dummy.pdf pour définir Adobe Acrobat par défaut
+        /// </summary>
         public static void OpenPDFDetails()
         {
             try

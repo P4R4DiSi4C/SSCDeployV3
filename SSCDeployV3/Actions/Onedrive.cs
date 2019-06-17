@@ -1,6 +1,8 @@
-﻿using System;
+﻿/* Classe Onedrive
+ * Permet de désinstaller Onedrive
+ */
+using System;
 using System.Diagnostics;
-using System.Threading;
 using System.Windows;
 
 namespace SSCDeploy.Actions

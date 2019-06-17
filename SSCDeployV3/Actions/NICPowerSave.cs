@@ -1,4 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿/* Classe NICPowerSave
+ * Gère la mise en veille des cartes réseau
+ */
+using System.Collections.ObjectModel;
 using System.Management.Automation;
 using System.Windows;
 

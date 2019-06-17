@@ -1,4 +1,7 @@
-﻿using System.Diagnostics;
+﻿/* Classe PowerCFG
+ * Permet l'ouverture d'une CMD avec la commande powercfg pour gérer les options d'alimentation
+ */
+using System.Diagnostics;
 
 namespace SSCDeploy.Actions
 {

@@ -1,4 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿/* Classe IPV6
+ * Permet l'activation ou désactivation de l'IPV6
+ */
+using System.Collections.ObjectModel;
 using System.Management.Automation;
 using System.Windows;
 

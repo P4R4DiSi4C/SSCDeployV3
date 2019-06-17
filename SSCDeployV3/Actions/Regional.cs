@@ -1,4 +1,7 @@
-﻿using Microsoft.Win32;
+﻿/* Classe Regional
+ * Applique les options régionales sur le poste "'" pour millier et "." pour décimales
+ */
+using Microsoft.Win32;
 using System;
 using System.Windows;
 
