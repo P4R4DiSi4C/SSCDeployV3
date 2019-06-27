@@ -80,10 +80,10 @@
                                 IsChecked="True"
                                 OnLabel="Oui" 
                                 OffLabel="Non" 
-                                Header="Suspension USB séléctive" 
+                                Header="Suspension USB sél." 
                                 Grid.Row="0" 
                                 Grid.Column="0" 
-                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Stretch" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed"  />
+                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed" Width="116"  />
                             <Controls:ToggleSwitch x:Name="check_firefox" 
                                 IsChecked="True" 
                                 OnLabel="Oui" 
@@ -100,7 +100,7 @@
                                 Header="Mise en veille secteur" 
                                 Grid.Row="0" 
                                 Grid.Column="2" 
-                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Stretch" Unchecked="Checkbox_actions_checked_changed" Checked="Checkbox_actions_checked_changed"  />
+                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" Unchecked="Checkbox_actions_checked_changed" Checked="Checkbox_actions_checked_changed" HorizontalAlignment="Right"  />
                             <Controls:ToggleSwitch x:Name="check_nic_sleep" 
                                 IsChecked="True"
                                 OnLabel="Oui" 
@@ -108,7 +108,7 @@
                                 Header="Mise en veille NIC" 
                                 Grid.Row="1" 
                                 Grid.Column="0" 
-                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Stretch" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed"  />
+                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed" Width="116"  />
                             <Controls:ToggleSwitch x:Name="check_ipv6" 
                                 IsChecked="True" 
                                 OnLabel="Oui" 
@@ -124,7 +124,7 @@
                                 Header="Mise en veille USB" 
                                 Grid.Row="1" 
                                 Grid.Column="2" 
-                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Stretch" Unchecked="Checkbox_actions_checked_changed" Checked="Checkbox_actions_checked_changed"  />
+                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" Unchecked="Checkbox_actions_checked_changed" Checked="Checkbox_actions_checked_changed" HorizontalAlignment="Right" Width="116"  />
                             <Controls:ToggleSwitch x:Name="check_unpin" 
                                 IsChecked="True"
                                 OnLabel="Oui" 
@@ -132,7 +132,7 @@
                                 Header="Désépinglage apps" 
                                 Grid.Row="2" 
                                 Grid.Column="0" 
-                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Stretch" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed"  />
+                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed" Width="116"  />
                             <Controls:ToggleSwitch x:Name="check_onedrive" 
                                 IsChecked="True" 
                                 OnLabel="Oui" 
@@ -148,7 +148,7 @@
                                 Header="Barre de tâches par déf." 
                                 Grid.Row="2" 
                                 Grid.Column="2" 
-                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Stretch" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed"  />
+                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed" HorizontalAlignment="Right" Width="116"  />
                             <Controls:ToggleSwitch x:Name="check_edge_desk" 
                                 IsChecked="True"
                                 OnLabel="Oui" 
@@ -156,7 +156,7 @@
                                 Header="Sup. raccourci Edge" 
                                 Grid.Row="3" 
                                 Grid.Column="0" 
-                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Stretch" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed"  />
+                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed" Width="116"  />
                             <Controls:ToggleSwitch x:Name="check_region" 
                                 IsChecked="True" 
                                 OnLabel="Oui" 
@@ -172,7 +172,7 @@
                                 Header="Adobe par déf." 
                                 Grid.Row="3" 
                                 Grid.Column="2" 
-                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Stretch" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed"  />
+                                Controls:ControlsHelper.HeaderFontSize="12" FontSize="12" VerticalAlignment="Center" Checked="Checkbox_actions_checked_changed" Unchecked="Checkbox_actions_checked_changed" HorizontalAlignment="Right" Width="116"  />
                         </Grid>
                     </GroupBox>
                     <Grid Grid.Row="2" Margin="0,10,0,0">
@@ -265,7 +265,7 @@
 
                     <iconPacks:PackIconMaterial x:Name="check_icon" Kind="CheckOutline" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed" Width="32" Height="32" />
                     <Controls:ProgressRing x:Name="progress_ring" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" IsActive="False" Width="32" Height="32" />
-                   
+
                     <TextBlock x:Name="deploy_status_textblock" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" FontSize="20" FontWeight="Bold">
                        EN COURS DE DÉPLOIEMENT
                     </TextBlock>
